@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:gd_cplatform_app.MarkupExtensions"
+             x:Class="gd_cplatform_app.MainPage"
+             BackgroundImageSource="layout1.xml"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <StackLayout>
+        <Frame Padding="0, 80, 0, 20" BackgroundColor="Transparent" HorizontalOptions="Center" VerticalOptions="Center">
+            <Image HeightRequest="80" WidthRequest="80" Source="{local:EmbeddedImage ResourceId= gd_cplatform_app.Resource.gd.jpg }"></Image>
+        </Frame>
+       
+        <Label Text="A Blockchain Technology App" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+
+        <Frame Background="Transparent" VerticalOptions="EndAndExpand" HorizontalOptions="Center">
+        <Button Text="Initialize Account" TextColor="White" FontSize="Large" Clicked="NavigateButton_OnClicked" BackgroundColor="Transparent"  BorderColor="Transparent"  FontAttributes="None" TextTransform="None"/>
+        </Frame>
+        <Button Text=" Access Account" TextColor="White"  FontSize="Large" BackgroundColor="Transparent" BorderColor="Transparent" FontAttributes="None" TextTransform="None" HorizontalOptions="Center" Padding="0, 0, 0, 90"/>
+    </StackLayout>
+   
+
+</ContentPage>
